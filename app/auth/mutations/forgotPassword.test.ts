@@ -8,6 +8,7 @@ beforeEach(async () => {
 })
 
 const generatedToken = "plain-token"
+jest.setTimeout(100000)
 jest.mock("blitz", () => ({
   ...jest.requireActual<object>("blitz")!,
   generateToken: () => generatedToken,

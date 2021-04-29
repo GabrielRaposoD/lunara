@@ -11,7 +11,7 @@ const mockCtx: any = {
     $create: jest.fn,
   },
 }
-
+jest.setTimeout(100000)
 describe("resetPassword mutation", () => {
   it("works correctly", async () => {
     expect(true).toBe(true)
